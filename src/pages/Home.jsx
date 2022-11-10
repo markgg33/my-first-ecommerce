@@ -1,8 +1,13 @@
 import React from 'react'
+import Announcements from '../components/Announcements'
+import Navbar from '../components/Navbar'
+import Slider from '../components/Slider'
 
 const Home = () => {
   return (
-    <div>The Home Page</div>
+    <div>
+    
+    </div>
   )
 }
 
