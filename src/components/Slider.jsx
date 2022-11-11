@@ -24,8 +24,8 @@ const Arrow = styled.div`
     top: 0;
     bottom: 0;
     margin: auto;
-    left: ${props=> props.direction == "left" && "10px"};
-    right: ${props=> props.direction =="right" && "10px"};
+    left: ${props=> props.direction === "left" && "10px"};
+    right: ${props=> props.direction ==="right" && "10px"};
     cursor: pointer;
     opacity: 0.5;
     z-index:2;
@@ -94,7 +94,7 @@ const Slider = () => {
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
             {sliderItems.map((item) =>(  
-            <Slide bg={item.bg}>
+            <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
             <Image src= {item.img}/>
             </ImgContainer>

@@ -1,5 +1,5 @@
 import SearchIcon from '@mui/icons-material/Search';
-import React , {useState, useEffect} from 'react'
+import React  from 'react'
 import styled from 'styled-components'
 import { ShoppingCartOutlined } from '@mui/icons-material/';
 import { Badge} from '@mui/material';
@@ -11,7 +11,6 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 100;
-
   // remove values if necessary (e.g Modifying site to mobile)
    //Removes the gap between announcement and navbar
 `
@@ -64,7 +63,7 @@ const Image = styled.img`
 const Input = styled.input`
   border: none;
   width: 250px;
-`
+  `
 
 const Logo = styled.div`
    font-weight: bold;
@@ -99,7 +98,7 @@ const Navbar = () => {
           <MenuItems>REGISTER</MenuItems>
           <MenuItems>SIGN IN</MenuItems>
           <MenuItems>
-          <Badge badgeContent={1} color="primary">
+          <Badge badgeContent={1} max={99} color="primary">
           <ShoppingCartOutlined/>
           </Badge>
           </MenuItems>
