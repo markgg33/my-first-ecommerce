@@ -1,3 +1,10 @@
+#NOTE TO SELF
+
+Please run the coded provided before commiting to this repository.
+
+### `npm run deploy`
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
