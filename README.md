@@ -1,4 +1,4 @@
-#NOTE TO SELF
+# NOTE TO SELF
 
 Please run the coded provided before commiting to this repository.
 
