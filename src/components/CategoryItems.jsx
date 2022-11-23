@@ -28,7 +28,7 @@ const Title = styled.h1`
   margin: 20px;
   letter-spacing: 5px;
   font-weight: 900;
-  font-style: italic;
+  //font-style: italic;
   text-shadow: -1px 2px 2px #000,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,

@@ -4,7 +4,7 @@ export const sliderItems = [
         img: "https://drive.google.com/uc?export=view&id=1zsqFO7p1gAFK0zFdMarvEdNVBgjEe3nI",
         title: "AIRPODS 1ST GENERATION!",
         desc: "Get it now with 30% discount!",
-        bg: "#540B0E",
+        bg: "#1B1725",
     },
 
     {
@@ -12,7 +12,7 @@ export const sliderItems = [
         img: "https://drive.google.com/uc?export=view&id=1GMWgDxB5Txy4syeVfKwoZoJjXZS8TNsG",
         title: "AIRPODS PRO SALE!",
         desc: "Get it now with 30% discount!",
-        bg: "#E09F3E",
+        bg: "#534B62",
     },
 
     {
@@ -20,7 +20,7 @@ export const sliderItems = [
         img: "https://drive.google.com/uc?export=view&id=17MGavAXPPEhjGCAYyW5ChgQKgmLmv4gs" ,
         title: "3RD PARTY SALE! LIKE THIS AIRPODS 3RD GEN!",
         desc: " Get your 3rd party Airpods 3rd Gen! GET 30% OFF TODAY!",
-        bg: "#335C67",
+        bg: "#A499B3",
     }
 ];
 

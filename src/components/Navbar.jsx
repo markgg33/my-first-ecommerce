@@ -57,12 +57,12 @@ const Image = styled.img`
  height: 70px;
  margin-top: 5px;
  align-items: center;
-
  display: flex;
 `
 const Input = styled.input`
   border: none;
-  width: 250px;
+  display: flex;
+  
   `
 
 const Logo = styled.div`

@@ -5,6 +5,8 @@ import Slider from './components/Slider';
 import Categories from './components/Categories'
 import ScrollButton from './components/ScrollButton';
 import Products from './components/Products';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -16,7 +18,9 @@ const App = () => {
     <Slider/> 
     <Categories/> 
     <Products/>
-    <ScrollButton/> 
+    <ScrollButton/>
+    <Newsletter/>
+    <Footer/>
   </div>
     
     )
