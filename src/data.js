@@ -1,29 +1,29 @@
 export const sliderItems = [
     {
         id: 1,
-        img: "https://drive.google.com/uc?export=view&id=1zsqFO7p1gAFK0zFdMarvEdNVBgjEe3nI",
+        img: "https://drive.google.com/uc?export=view&id=163MYcUTwpVUemhzwV4hc6BG_mxORpyD9",
         title: "AIRPODS 1ST GENERATION!",
         desc: "Get it now with 30% discount!",
-        bg: "#1B1725",
+        bg: "#949BA0",
     },
 
     {
         id: 2,
-        img: "https://drive.google.com/uc?export=view&id=1GMWgDxB5Txy4syeVfKwoZoJjXZS8TNsG",
+        img: "https://drive.google.com/uc?export=view&id=14mCNZ1J_PivC7rjJg3tdAeBZ3WnR5E1t",
         title: "AIRPODS PRO SALE!",
         desc: "Get it now with 30% discount!",
-        bg: "#534B62",
+        bg: "#5B3000",
     },
 
     {
         id: 3,
-        img: "https://drive.google.com/uc?export=view&id=17MGavAXPPEhjGCAYyW5ChgQKgmLmv4gs" ,
+        img: "https://drive.google.com/uc?export=view&id=12I42qeUvffy0459A7ZWM4fyI4_4y1UKX" ,
         title: "3RD PARTY SALE! LIKE THIS AIRPODS 3RD GEN!",
         desc: " Get your 3rd party Airpods 3rd Gen! GET 30% OFF TODAY!",
         bg: "#A499B3",
     }
 ];
-
+    
 
 // >>>>>(FOR CHANGING LINKS IN GOOGLE DRIVE) uc?export=view&id=
 

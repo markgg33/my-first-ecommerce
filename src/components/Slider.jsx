@@ -54,7 +54,7 @@ const InfoContainer = styled.div`
 `
 
 const Image = styled.img`
-  height: 90%; 
+  height: 120%; 
 `
 
 const Title = styled.h1`
