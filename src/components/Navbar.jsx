@@ -95,6 +95,8 @@ const Navbar = () => {
         </Logo>
       </Center>
         <Right>
+          <MenuItems>HOME</MenuItems>
+          <MenuItems>FEATURED ITEM</MenuItems>
           <MenuItems>REGISTER</MenuItems>
           <MenuItems>SIGN IN</MenuItems>
           <MenuItems>
