@@ -1,8 +1,12 @@
-import { Facebook, Instagram } from '@mui/icons-material'
+import { Facebook, Instagram, Room} from '@mui/icons-material'
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 import styled from 'styled-components'
+import { mobile } from '../responsive';
 
 const Container = styled.div`
     display: flex;
+    ${mobile({ flexDirection: "column"})};
 `;
 
 const Image = styled.img`
@@ -19,10 +23,15 @@ const Left = styled.div`
 `;
 const Center = styled.div`
     flex: 1;
+    padding: 20px;
+    ${mobile({ display: "none"})};
 `;
 const Right = styled.div`
     flex: 1;
+    padding: 20px;
+    ${mobile({backgroundColor: "#BCD4DE"})}
 `;
+
 const Logo = styled.h1`
 
 `;
@@ -32,6 +41,7 @@ const Desc = styled.p`
 `;
 
 const SocialContainer = styled.div`
+
     display:flex;
     
 `;
@@ -48,6 +58,43 @@ const SocialIcon = styled.div`
     cursor: pointer;
 `;
 
+const Title = styled.h3`
+
+    margin-bottom: 30px;
+
+`;
+
+const List = styled.ul`
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+`;
+
+const ListItem = styled.li`
+
+    width: 50%;
+    margin-bottom: 10px;
+
+`;
+
+const ContactItem = styled.div`
+
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+
+`;
+
+const Payment = styled.img`
+
+    width: 100px;
+`;
+
+
 const Footer = () => {
   return (
     <Container>
@@ -56,8 +103,7 @@ const Footer = () => {
             <Image src = "https://drive.google.com/uc?export=view&id=1-9n9g8O6asV2SzdhJuw1tLkpz_BMSNy3" />
             </Logo>
             <Desc>
-                This section will be your lorem lorem whatever thingy for checking the text for spaces,
-                and more of the styles used in this project. Happy *put crying meme* CODING!
+                Affordable Products with a Reasonable Price! Shop now.
             </Desc>
             <SocialContainer>
                 <SocialIcon color = "226CE0">
@@ -69,10 +115,29 @@ const Footer = () => {
             </SocialContainer>
         </Left>
         <Center>
-
+            <Title>
+                Useful Links
+            </Title>
+        <List>
+            <ListItem>Controllers</ListItem>
+            <ListItem>Peripherals</ListItem>
+            <ListItem>Airpods</ListItem>
+            <ListItem>Terms</ListItem>
+            <ListItem>Wishlist</ListItem>
+        </List>
         </Center>
         <Right>
-
+            <Title>Contacts</Title>
+            <ContactItem>
+                <Room style={{marginRight:"10px"}}/>123 Mandaluyong City 
+            </ContactItem>
+            <ContactItem>
+                <PhoneIcon style={{marginRight:"10px"}}/>+63 9234567890
+            </ContactItem>
+            <ContactItem>
+                <EmailIcon style={{marginRight:"10px"}}/>contactdis@thirdy.com
+            </ContactItem>
+            <Payment src = "https://drive.google.com/uc?export=view&id=1ENgKf34F0R64GpAZFJG_foVNrxDJBT36"/>
         </Right>
     </Container>
   )

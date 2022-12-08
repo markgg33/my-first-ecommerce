@@ -1,29 +1,14 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Announcements from './components/Announcements';
-import Slider from './components/Slider';
-import Categories from './components/Categories'
-import ScrollButton from './components/ScrollButton';
-import Products from './components/Products';
-import Newsletter from './components/Newsletter';
-import Footer from './components/Footer';
-
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import ProductList from "./pages/ProductList";
+import Register from "./pages/Register";
+import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+import Login from "./pages/Login";
+import Cart from "./pages/Cart";
 
 const App = () => {
 
-  return (
-  <div>
-    <Announcements />
-    <Navbar/>
-    <Slider/> 
-    <Categories/> 
-    <Products/>
-    <ScrollButton/>
-    <Newsletter/>
-    <Footer/>
-  </div>
-    
-    )
-}
+  return <Home/>
 
-export default App;
+};
+export default App

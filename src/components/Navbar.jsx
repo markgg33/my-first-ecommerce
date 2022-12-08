@@ -1,8 +1,9 @@
-import SearchIcon from '@mui/icons-material/Search';
-import React  from 'react'
+import SearchIcon from '@mui/icons-material/Search'
 import styled from 'styled-components'
-import { ShoppingCartOutlined } from '@mui/icons-material/';
-import { Badge} from '@mui/material';
+import { ShoppingCartOutlined } from '@mui/icons-material/'
+import { Badge} from '@mui/material'
+import {mobile} from "../responsive"
+import React from "react"
 
 const Container = styled.div`
   height: 100px;
@@ -11,71 +12,81 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 100;
+  ${mobile({ height: "50px"})};
   // remove values if necessary (e.g Modifying site to mobile)
    //Removes the gap between announcement and navbar
-`
+`;
 
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   align-content: center;
-  justify-content:space-between;;
-`
+  justify-content:space-between;
+  ${mobile({ padding: "10px 0px"})};
+  
+`;
 const Left = styled.div`
  flex: 1;
  display: flex;
  align-items: center;
  justify-content: flex-start; // change flex value to start or end
-`
+ ${mobile({ width: "40px"})}
+`;
 
 const Right = styled.div`
  flex: 1;
  display: flex;
  align-items: center;
  justify-content: flex-end;
-`
+ ${mobile({flex: 2, justifyContent: "center", marginRight: "15px"})}
+`;
 
 const Center = styled.div`
  flex: 1;
  display: flex;
  align-items: center;
  justify-content: center;
-`
+
+`;
 
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
-`
+  ${mobile({ display: "none"})};
+`;
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
   margin-left: 25px;
   padding: 5px;
-`
+  ${mobile({ width: "70px", marginLeft: "7px"})};
+`;
 const Image = styled.img`
  height: 70px;
  margin-top: 5px;
  align-items: center;
  display: flex;
-`
+ ${mobile({ height: "30px", margin: "3px", display: "none"})};
+`;
 const Input = styled.input`
   border: none;
   display: flex;
-  
-  `
+  ${mobile({ width: "50px"})};
+`;
 
 const Logo = styled.div`
-   font-weight: bold;
    font-size: 50px; 
    
-`
+`;
 const MenuItems = styled.div`
    font-size:14px; 
    cursor: pointer;
    margin-left: 25px;
+   color: black;
+   ${mobile({ fontSize: "10px", marginLeft: "23px"})};
+`;
 
-`
 
 const Navbar = () => {
 
@@ -85,7 +96,7 @@ const Navbar = () => {
         <Left> 
         <Language>EN</Language>
           <SearchContainer>
-            <Input/>
+            <Input placeholder = "Search"/>
             <SearchIcon style={{color:"gray", fontSize:16}}/>
           </SearchContainer>
         </Left>
@@ -96,11 +107,11 @@ const Navbar = () => {
       </Center>
         <Right>
           <MenuItems>HOME</MenuItems>
-          <MenuItems>FEATURED ITEM</MenuItems>
+          <MenuItems>PRODUCTS</MenuItems>
           <MenuItems>REGISTER</MenuItems>
           <MenuItems>SIGN IN</MenuItems>
           <MenuItems>
-          <Badge badgeContent={1} max={99} color="primary">
+          <Badge badgeContent={2} max={99} color="primary">
           <ShoppingCartOutlined/>
           </Badge>
           </MenuItems>

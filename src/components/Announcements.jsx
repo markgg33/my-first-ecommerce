@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     height: 30px;
@@ -10,11 +11,12 @@ const Container = styled.div`
     font-size: 20px;
     font-weight: 500;
     padding: 5px 0px;
+    ${mobile({ fontSize: "12px", height: "30px"})};
 `
 const Announcements = () => {
   return (
     <Container>
-        Website is currently working in progress. Thank you for your understanding.
+        Website is currently working in progress. Currently coding responsive side.
     </Container>
   )
 }

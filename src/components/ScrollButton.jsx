@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 import {IoIosArrowDropupCircle} from 'react-icons/io';
+import { mobile } from '../responsive';
   
 const Button = styled.div`
    position: fixed; 
@@ -12,9 +13,10 @@ const Button = styled.div`
    z-index: 3;
    cursor: pointer;
    color: #E09F3E;
+  
 
    &:hover{
-    position: fixed; 
+   position: fixed; 
    width: 100%;
    left: 95%;
    bottom: 40px;
@@ -24,7 +26,10 @@ const Button = styled.div`
    cursor: pointer;
    color: black;
    }
+
+   ${mobile({ margin: "0px -60px", color: "#E09F3E"})}
 `
+
 
 const ScrollButton = () =>{
   
