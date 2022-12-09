@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
     padding: 20px;
-    ${mobile({padding: "10px"})}
+    ${mobile({padding: "10px", marginTop:"10px"})}
 `;
 const Title = styled.h1`
     font-weight: 300;;
@@ -153,6 +153,7 @@ const SummaryButton = styled.button`
     border: none;
     border-radius: 10px;
     font-weight: 700;
+    cursor:pointer;
 `;
 const Cart = () => {
   return (

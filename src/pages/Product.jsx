@@ -22,7 +22,7 @@ const ImgContainer = styled.div`
 `;
 const Image = styled.img`
     width: 70%;
-    ${mobile({marginLeft: "53px"})}
+    ${mobile({display: "flex", width: "100%"})}
 `;
 const InfoContainer = styled.div`
     flex:1;
@@ -34,6 +34,7 @@ const Title = styled.h1`
 `;
 const Desc = styled.p`
     margin: 20px 0px;
+
 `;
 const Price = styled.span`
     font-weight: 100;
@@ -93,6 +94,7 @@ const Amount = styled.span`
 const Button = styled.button`
     padding: 15px;
     border: 2px solid #ECA72C;
+    border-radius: 10px;
     background-color: white;
     cursor: pointer;
     font-weight: 500;
@@ -100,6 +102,7 @@ const Button = styled.button`
     &:hover{
         background-color: #ECA72C;
     }
+    ${mobile({padding: "20px"})}
 `;
 
 const Product = () => {

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { mobile } from '../responsive'
+import { tablet } from '../responsive'
 
 const Container = styled.div`
     height: 30px;
@@ -11,7 +12,8 @@ const Container = styled.div`
     font-size: 20px;
     font-weight: 500;
     padding: 5px 0px;
-    ${mobile({ fontSize: "12px", height: "30px"})};
+    ${mobile({ fontSize: "20px", height: "50px"})};
+    ${tablet({ fontSize: "23px", height: "50px"})};
 `
 const Announcements = () => {
   return (

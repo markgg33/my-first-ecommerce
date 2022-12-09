@@ -2,12 +2,14 @@ import styled from 'styled-components'
 import { categories } from '../data'
 import { CategoryItems } from './CategoryItems'
 import { mobile } from '../responsive'
+import { tablet } from '../responsive'
 
 const Container = styled.div`
   display: flex;
-  padding: 20px;;
+  padding: 20px;
   justify-content: space-between;
   ${mobile({ padding: "0px", flexDirection:"column"})};
+  ${tablet({ padding: "0px", flexDirection:"column"})};
 `
 
 const Categories = () => {

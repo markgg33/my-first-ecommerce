@@ -3,16 +3,19 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import styled from 'styled-components'
 import { mobile } from '../responsive';
+import { tablet } from '../responsive';
 
 const Container = styled.div`
     display: flex;
     ${mobile({ flexDirection: "column"})};
+    ${tablet({ flexDirection: "column"})};
 `;
 
 const Image = styled.img`
  height: 50px;
  margin-top: 5px;
  display: flex;
+ ${mobile({height: "60px", marginLeft: "75px"})};
 `;
 
 const Left = styled.div`
@@ -30,6 +33,7 @@ const Right = styled.div`
     flex: 1;
     padding: 20px;
     ${mobile({backgroundColor: "#BCD4DE"})}
+    ${tablet({backgroundColor: "#BCD4DE"})}
 `;
 
 const Logo = styled.h1`
@@ -103,7 +107,7 @@ const Footer = () => {
             <Image src = "https://drive.google.com/uc?export=view&id=1-9n9g8O6asV2SzdhJuw1tLkpz_BMSNy3" />
             </Logo>
             <Desc>
-                Affordable Products with a Reasonable Price! Shop now.
+                <b>Thirdy</b> offers Good Quality Products that comes with good prices and discounts. Order yours now!
             </Desc>
             <SocialContainer>
                 <SocialIcon color = "226CE0">

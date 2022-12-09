@@ -2,8 +2,11 @@ import SearchIcon from '@mui/icons-material/Search'
 import styled from 'styled-components'
 import { ShoppingCartOutlined } from '@mui/icons-material/'
 import { Badge} from '@mui/material'
-import {mobile} from "../responsive"
+import {mobile, tablet} from "../responsive"
 import React from "react"
+import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+import Home from '../pages/Home'
+import ProductList from '../pages/ProductList'
 
 const Container = styled.div`
   height: 100px;
@@ -12,7 +15,7 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 100;
-  ${mobile({ height: "50px"})};
+  ${mobile({ height: "60px"})};
   // remove values if necessary (e.g Modifying site to mobile)
    //Removes the gap between announcement and navbar
 `;
@@ -23,6 +26,7 @@ const Wrapper = styled.div`
   align-content: center;
   justify-content:space-between;
   ${mobile({ padding: "10px 0px"})};
+  
   
 `;
 const Left = styled.div`
@@ -39,6 +43,7 @@ const Right = styled.div`
  align-items: center;
  justify-content: flex-end;
  ${mobile({flex: 2, justifyContent: "center", marginRight: "15px"})}
+ ${tablet({flex: 2, justifyContent: "center", marginRight: "20px"})}
 `;
 
 const Center = styled.div`
@@ -53,6 +58,7 @@ const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
   ${mobile({ display: "none"})};
+  ${tablet({ display: "none"})};
 `;
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
@@ -60,7 +66,8 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
-  ${mobile({ width: "70px", marginLeft: "7px"})};
+  ${mobile({ width: "80px", marginLeft: "7px"})};
+  ${tablet({ width: "80%", marginLeft: "5px"})};
 `;
 const Image = styled.img`
  height: 70px;
@@ -68,11 +75,13 @@ const Image = styled.img`
  align-items: center;
  display: flex;
  ${mobile({ height: "30px", margin: "3px", display: "none"})};
+ ${tablet({ height: "60px", margin: "10px 3px"})};
 `;
 const Input = styled.input`
   border: none;
   display: flex;
-  ${mobile({ width: "50px"})};
+  ${mobile({ width: "60px"})};
+  ${tablet({ width: "100%"})};
 `;
 
 const Logo = styled.div`
@@ -84,7 +93,7 @@ const MenuItems = styled.div`
    cursor: pointer;
    margin-left: 25px;
    color: black;
-   ${mobile({ fontSize: "10px", marginLeft: "23px"})};
+   ${mobile({ fontSize: "12px", marginTop: "6px" , marginLeft: "20px"})};
 `;
 
 

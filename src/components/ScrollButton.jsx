@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components';
 import {IoIosArrowDropupCircle} from 'react-icons/io';
 import { mobile } from '../responsive';
-  
+import { tablet } from '../responsive';
 const Button = styled.div`
    position: fixed; 
    width: 100%;
@@ -28,6 +28,7 @@ const Button = styled.div`
    }
 
    ${mobile({ margin: "0px -60px", color: "#E09F3E"})}
+   ${tablet({ margin: "0px -60px", color: "#E09F3E"})}
 `
 
 
