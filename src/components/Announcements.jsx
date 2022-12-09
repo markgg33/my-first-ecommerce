@@ -12,8 +12,8 @@ const Container = styled.div`
     font-size: 20px;
     font-weight: 500;
     padding: 5px 0px;
-    ${mobile({ fontSize: "20px", height: "50px"})};
-    ${tablet({ fontSize: "23px", height: "50px"})};
+    ${mobile({ fontSize: "19px", height: "50px"})};
+
 `
 const Announcements = () => {
   return (

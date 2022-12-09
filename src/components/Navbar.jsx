@@ -43,7 +43,7 @@ const Right = styled.div`
  align-items: center;
  justify-content: flex-end;
  ${mobile({flex: 2, justifyContent: "center", marginRight: "15px"})}
- ${tablet({flex: 2, justifyContent: "center", marginRight: "20px"})}
+ ${tablet({flex: 2, justifyContent: "center", marginRight: "15px"})}
 `;
 
 const Center = styled.div`
@@ -51,6 +51,7 @@ const Center = styled.div`
  display: flex;
  align-items: center;
  justify-content: center;
+ ${mobile({display: "none"})};
 
 `;
 
@@ -66,7 +67,7 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
-  ${mobile({ width: "80px", marginLeft: "7px"})};
+  ${mobile({ width: "100%", marginLeft: "7px"})};
   ${tablet({ width: "80%", marginLeft: "5px"})};
 `;
 const Image = styled.img`
@@ -80,7 +81,7 @@ const Image = styled.img`
 const Input = styled.input`
   border: none;
   display: flex;
-  ${mobile({ width: "60px"})};
+  ${mobile({ width: "100%"})};
   ${tablet({ width: "100%"})};
 `;
 

@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import RemoveIcon from '@mui/icons-material/Remove';
 import { mobile } from "../responsive";
+import { tablet} from "../responsive";
 
 
 const Container = styled.div`
@@ -16,6 +17,7 @@ const Wrapper = styled.div`
     padding: 50px;
     display: flex;
     ${mobile({padding: "10px", flexDirection: "column"})}
+    ${tablet({padding: "10px", flexDirection: "column"})}
 `;
 const ImgContainer = styled.div`
     flex:1;
@@ -23,6 +25,7 @@ const ImgContainer = styled.div`
 const Image = styled.img`
     width: 70%;
     ${mobile({display: "flex", width: "100%"})}
+    ${tablet({display: "flex", width: "100%"})}
 `;
 const InfoContainer = styled.div`
     flex:1;
