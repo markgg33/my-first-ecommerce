@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/my-first-ecommerce/static/js/main.f8742eaf.js",
+    "main.js": "/my-first-ecommerce/static/js/main.0b3da560.js",
     "index.html": "/my-first-ecommerce/index.html",
-    "main.f8742eaf.js.map": "/my-first-ecommerce/static/js/main.f8742eaf.js.map"
+    "main.0b3da560.js.map": "/my-first-ecommerce/static/js/main.0b3da560.js.map"
   },
   "entrypoints": [
-    "static/js/main.f8742eaf.js"
+    "static/js/main.0b3da560.js"
   ]
 }
