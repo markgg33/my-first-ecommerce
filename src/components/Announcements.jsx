@@ -9,16 +9,21 @@ const Container = styled.div`
     text-align: center;
     align-content: center;
     justify-content: center;
+    padding: 5px 0px;
+    ${mobile({ fontSize: "15px", height: "50px", })};
+`;
+
+const AnnounceText = styled.p`
     font-size: 20px;
     font-weight: 500;
-    padding: 5px 0px;
-    ${mobile({ fontSize: "19px", height: "50px"})};
-
-`
+    
+`;
 const Announcements = () => {
   return (
     <Container>
-        Website is currently working in progress. Currently coding responsive side.
+      <AnnounceText>
+      Website is currently working in progress. Currently coding responsive side.
+      </AnnounceText>
     </Container>
   )
 }
