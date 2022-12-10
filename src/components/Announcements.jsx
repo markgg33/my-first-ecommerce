@@ -12,7 +12,7 @@ const Container = styled.div`
     font-size: 20px;
     font-weight: 500;
     padding: 5px 0px;
-    ${mobile({ fontSize: "19px", height: "50px"})};
+    ${mobile({ fontSize: "17px", height: "50px"})};
 
 `
 const Announcements = () => {
